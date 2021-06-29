@@ -1,0 +1,39 @@
+html,body {
+    background-color: #35495e;
+    color: #ccc;
+}
+
+.app{
+    display: block;
+    text-align: center;
+}
+
+.count {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.btn, .btn1 {
+    background-color: #41b883;
+    border:unset;
+    padding: 5px 15px;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 3px;
+    margin:0 10px;
+    font-weight: bold;
+}
+
+.btn1 {
+    background-color: indianred;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: #218558;
+    color:#fff;
+}
+
+.para {
+    text-align: center;
+}

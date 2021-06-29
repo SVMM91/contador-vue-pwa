@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--METADATA PARA PWA-->
+    <!--METADATA PARA PWA MOBILE-->
+    <meta name="theme-color" content="#c063a0">  <!--BARRA DE ESTADO PARA ANDROID-->
+    <meta name="mobile-web-app-capable" content="yes">  <!--BARRA DE ESTADO PARA IOS-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">  <!--BARRA DE ESTADO PARA IOS-->
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" class="true">
+    <title>Contador App</title>
+    <!--ICONOS-->
+    <link rel="stylesheet" href="./img/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="./img/favicon.png">
+    <link rel="apple-touch-startup-image" href="./img/favicon.png">
+    <!--MANIFEST-->
+    <link rel="manifest" href="./manifest.json">
+    <!--CDN VUE.JS-->
+    <script src="https://unpkg.com/vue@next"></script>
+    <!--CSS-->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+</head>
+<body>
+    <div id="app" class="app">
+        <h1 class="title">{{title}}</h1>
+        <hr>
+        <h3 class="count">{{count}}</h3>
+        <hr>
+        <div>
+            <button class="btn" v-on:click="disCount">-1</button>
+            <button class="btn" @click="addCount">+1</button>
+        </div>
+        <hr>
+        <div><!--RECIBIENDO PARAMETROS EN METHODS MODCOUNT-->
+            <h4 class="para">Recibiendo parametros</h4>
+            <button class="btn1" v-on:click="modCount('dis')">-1</button>
+            <button class="btn1" @click="modCount">+1</button>
+        </div>
+
+        <div class=""> 
+            <h4 class="para">Multiples parametros</h4>
+            <button class="btn1" v-on:click="modCount('dis', 
+            50)">-50</button>
+            <button class="btn1" @click="modCount('', 10)">+10</button>
+        </div>
+    </div>
+
+    <script src="./load.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/mountApp.js"></script>
+</body>
+</html>
