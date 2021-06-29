@@ -1,4 +1,4 @@
-const CACHE_NAME = "v1_cache_contador_app_vue";
+const CACHE_NAME = "v2_cache_contador_app_vue";
 const urlsToCache = [
     "./",
     "./img/favicon.png",
